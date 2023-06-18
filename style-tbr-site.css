@@ -19,7 +19,7 @@ body * {
 
 #container {
   width: 100%;
-  min-width: 375px;
+  min-width: 590px;
   max-width: 1920px;
 }
 
@@ -154,5 +154,5 @@ footer {
 }
 
 /* Responsive */
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 590px) {
 }

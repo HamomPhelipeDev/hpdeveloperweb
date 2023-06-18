@@ -19,7 +19,7 @@ body * {
 
 #container {
   width: 100%;
-  min-width: 375px;
+  min-width: 590px;
   max-width: 1920px;
 }
 
@@ -59,7 +59,7 @@ body * {
   text-align: center;
   padding: 100px;
   background: rgb(23, 23, 23) no-repeat;
-  min-width: 375px;
+  min-width: 590px;
   max-width: 1920px;
 }
 
@@ -162,7 +162,7 @@ footer {
 }
 
 /* Responsive */
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 590px) {
   #container {
     display: block;
     background: none;
