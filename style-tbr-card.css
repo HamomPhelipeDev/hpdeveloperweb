@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: rgb(17, 17, 17);
+}
+body * {
+  font-family: "Inter", sans-serif;
+  color: white;
+}
+
+#container {
+  width: 100%;
+  min-width: 375px;
+  max-width: 1920px;
+}
+
+#logomarca {
+  text-align: center;
+  padding: 20px;
+  background-image: url(./assets/navbar.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+#logomarca img {
+  padding-top: 30px;
+  width: 500px;
+}
+
+.menu ul {
+  text-align: center;
+  padding: 30px;
+}
+.menu ul li {
+  display: inline;
+}
+
+.menu ul li a {
+  color: rgb(204, 125, 233);
+  text-decoration: none;
+  display: inline;
+  padding: 35px;
+  transition: color 0.3s;
+}
+.menu li a:hover {
+  color: #535353;
+}
+
+.pag-portfolio {
+  text-align: center;
+  padding: 50px;
+}
+
+.pag-portfolio h1 {
+  font-size: 25px;
+}
+.pag-portfolio hr {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+  width: 500px;
+}
+
+.conteudo {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px;
+ 
+}
+
+.conteudo a {
+  text-decoration: none;
+  text-align: center;
+  padding: 15px;
+  align-items: center;
+  transition: 0.3s;
+}
+.conteudo a:hover {
+  color:rgb(204, 125, 233)
+}
+
+.conteudo p {
+  padding-top: 20px;
+   margin-left: auto;
+  margin-right: auto;
+   text-align: center;
+   font-style: italic;
+   font-size: small;
+}
+
+footer {
+  background: url(./assets/navbar.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px 100px 50px;
+}
+
+.redes-sociais {
+  margin-bottom: 20px;
+}
+
+.redes-sociais i {
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  padding: 15px;
+  transition: color 0.3s;
+}
+
+.redes-sociais i:hover {
+  color: rgb(204, 125, 233);
+}
+
+.copyright-name {
+  margin-top: 30px;
+}
+
+.copyright {
+  margin-top: 10px;
+}
+
+@keyframes slide-in {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
+}
+
+@keyframes slide-back {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0;
+  }
+}
+
+/* Responsive */
+@media screen and (max-width: 375px) {
+}

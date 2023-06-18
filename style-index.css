@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: rgb(17, 17, 17);
+}
+body * {
+  font-family: "Inter", sans-serif;
+  color: white;
+}
+
+#container {
+  width: 100%;
+  min-width: 375px;
+  max-width: 1920px;
+}
+
+#logomarca {
+  text-align: center;
+  padding: 20px;
+  background-image: url(./assets/navbar.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+#logomarca img {
+  padding-top: 30px;
+  width: 500px;
+}
+
+.menu ul {
+  text-align: center;
+  padding: 30px;
+}
+.menu ul li {
+  display: inline;
+}
+
+.menu ul li a {
+  color: rgb(204, 125, 233);
+  text-decoration: none;
+  display: inline;
+  padding: 35px;
+  transition: color 0.3s;
+}
+.menu li a:hover {
+  color: #535353;
+}
+
+.sobremim {
+  text-align: center;
+  padding: 100px;
+  background: rgb(23, 23, 23) no-repeat;
+  min-width: 375px;
+  max-width: 1920px;
+}
+
+.sobremim h1 {
+  font: bold;
+  font-size: 270%;
+}
+
+.sobremim p {
+  font-size: 110%;
+}
+
+.sobremim a {
+  color: rgb(228, 193, 241);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.sobremim href {
+  font-size: 110%;
+}
+.sobremim a:hover {
+  color: rgb(83, 83, 83);
+}
+
+.conteudo {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+.conteudo :hover {
+  color: rgb(204, 125, 233);
+}
+
+.conteudo a {
+  text-decoration: none;
+  text-align: center;
+  padding: 50px;
+  align-items: center;
+  transition: color 0.3s;
+}
+
+.conteudo p {
+  padding-top: 20px;
+}
+
+footer {
+  background: url(./assets/navbar.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px 100px 50px;
+}
+
+.redes-sociais {
+  margin-bottom: 20px;
+}
+
+.redes-sociais i {
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  padding: 15px;
+  transition: color 0.3s;
+}
+
+.redes-sociais i:hover {
+  color: rgb(204, 125, 233);
+}
+
+.copyright-name {
+  margin-top: 30px;
+}
+
+.copyright {
+  margin-top: 10px;
+}
+
+@keyframes slide-in {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
+}
+
+@keyframes slide-back {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0;
+  }
+}
+
+/* Responsive */
+@media screen and (max-width: 375px) {
+  #container {
+    display: block;
+    background: none;
+  }
+  #logomarca img {
+    padding-top: 30px;
+    width: 300px;
+  }
+  .menu ul li a {
+    display: block;
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  .sobremim {
+    background: none;
+    align-items: center;
+  }
+
+  .sobremim h1 {
+    font: bold;
+    font-size: 270%;
+    text-align: center;
+  }
+
+  .sobremim p {
+    text-align: center;
+    font-size: 130%;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .sobremim a {
+    color: rgb(228, 193, 241);
+    text-decoration: none;
+    transition: color 0.3s;
+    text-align: center;
+  }
+}
