@@ -18,49 +18,97 @@ body * {
 }
 
 #container {
-  width: 100%;
-  min-width: 590px;
-  max-width: 1920px;
-}
-
-#logomarca {
-  text-align: center;
-  padding: 20px;
   background-image: url(./assets/navbar.png);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
 }
-#logomarca img {
-  padding-top: 30px;
-  width: 500px;
-}
 
-.menu ul {
-  text-align: center;
+#menu {
+  display: flex;
+  justify-content: space-between;
   padding: 30px;
 }
-.menu ul li {
-  display: inline;
+
+#menu img {
+  width: 400px;
 }
 
-.menu ul li a {
+#menu ul {
+  list-style: none;
+}
+#menu ul li {
+  display: inline-block;
+  line-height: 137px;
+  padding-right: 40px;
+}
+
+#menu ul li a {
   color: rgb(204, 125, 233);
   text-decoration: none;
-  display: inline;
-  padding: 35px;
   transition: color 0.3s;
 }
-.menu li a:hover {
+#menu li a:hover {
   color: #535353;
+}
+
+.toggle-btn {
+  font-size: 1.5rem;
+  cursor: pointer;
+  line-height: 137px;
+  display: none;
+}
+
+.dropdown-menu {
+  display: none;
+  list-style: none;
+  position: absolute;
+  right: 2rem;
+  top: 140px;
+  height: 0;
+  width: 300px;
+  background-color: rgba(45, 45, 45, 0.8);
+  backdrop-filter: blur (15px);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown-menu.open {
+  height: 167px;
+}
+.dropdown-menu  a {
+  color: rgb(204, 125, 233);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.dropdown-menu li a:hover {
+  color: #535353;
+}
+.dropdown-menu li {
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 1200px) {
+  .menu {
+    display: none;
+  }
+  .toggle-btn {
+    display: block;
+  }
+  .dropdown-menu {
+    display: block;
+  }
 }
 
 .sobremim {
   text-align: center;
   padding: 100px;
   background: rgb(23, 23, 23) no-repeat;
-  min-width: 590px;
-  max-width: 1920px;
 }
 
 .sobremim h1 {
@@ -110,7 +158,7 @@ body * {
 }
 
 footer {
-  background: url(./assets/navbar.png);
+  background-image: url(./assets/navbar.png);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
@@ -166,11 +214,22 @@ footer {
   #container {
     display: block;
     background: none;
+    background-image: url(./assets/navbar.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    height: 220px;
+    width: 100%;
   }
-  #logomarca img {
+  #menu img {
     padding-top: 30px;
     width: 300px;
   }
+
+  .toggle-btn {
+  line-height: 160px;
+}
+
   .menu ul li a {
     display: block;
     font-size: 12px;
@@ -200,5 +259,60 @@ footer {
     text-decoration: none;
     transition: color 0.3s;
     text-align: center;
+  }
+  .redes-sociais i {
+    font-size: 35px;
+  }
+  .copyright {
+    font-size: 13px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 700px) {
+  #container {
+    display: block;
+    background: none;
+    background-image: url(./assets/navbar.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    height: 220px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 800px) {
+  #container {
+    display: block;
+    background: none;
+    background-image: url(./assets/navbar.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    height: 220px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 900px) {
+  #container {
+    display: block;
+    background: none;
+    background-image: url(./assets/navbar.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    height: 220px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  #container {
+    display: block;
+    background: none;
+    background-image: url(./assets/navbar.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    height: 220px;
+    width: 100%;
   }
 }
